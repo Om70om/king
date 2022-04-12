@@ -1,0 +1,232 @@
+*{ margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  
+  
+}
+
+nav{
+ width: 100%;
+height: 60px;
+  background-color: #70ECEF;
+  color: #FFF;
+  display: flex;
+  justify-content: space-around;
+ 
+  text-transform: uppercase;
+  align-items: center;
+  
+  
+}
+.logo{
+  width: 30%;
+  transform: rotate( 1deg);
+animation: heart 1.2s linear infinite;
+position: relative;
+ top: -20px;
+ 
+}
+@keyframes heart{
+  
+  0% { transform: rotate( 1deg) scale(1);}
+  20%{ transform: rotate( 0deg) scale(1.2);}
+  40%{ transform: rotate( 0.5deg) scale(1.1);}
+  60%{ transform: rotate( 1deg) scale(1.3);}
+  80%{ transform: rotate( 0deg) scale(1.2);}
+ 100%{ transform: rotate( 1deg) scale(1);}
+}
+.logo h1{
+  text-transform: capitalize;
+  padding-left: 45px;
+
+  font-weight: bold;
+  text-shadow: 3px 4px 3px red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  
+}
+
+.menu a{
+  color: red;
+text-decoration: none;
+font-weight: bold;
+font-size: 120%;
+
+}
+.menu{
+  width: 70%;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  }
+  
+.main{
+  width: 100%;
+  height: 110px;
+  background-color: hsl(212, 29%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ 
+}
+.heart{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  transform: rotate(45deg);
+  animation: hbeat 1s linear infinite;
+  box-shadow: 0.1px 0.1px 0.1px red;
+ 
+  
+}
+.heart::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.heart::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  transform: translatex(-50%);
+  border-radius: 50%;
+}
+
+@keyframes hbeat{
+   0% { transform: rotate( 45deg) scale(1);}
+  20%{ transform: rotate( 45deg) scale(1.2);}
+  40%{ transform: rotate( 45deg) scale(1.17);}
+  60%{ transform: rotate( 45deg) scale(1.3);}
+  80%{ transform: rotate( 45deg) scale(1.2);}
+ 100%{ transform: rotate( 45deg) scale(1);}
+}
+@media(max-width: 480px) {
+  .main{
+    width: 100%;
+    height: 67px;
+  }
+}
+  
+@media(max-width: 480px){
+  .logo {
+    width: 10%;
+  font-size: 8px;
+  
+  
+    }
+}
+@media(max-width:480px){
+  nav{
+    height: 30px;
+    background-color: #CC5DAA;
+    width: 100%;
+    
+  }
+}
+@media(max-width:480px){
+  .logo h1{
+    padding-left: -0px;
+  padding-top: 7px;
+  text-shadow: 3px 4px 3px green;
+  }
+}
+@media(max-width:480px){
+  .menu a{
+  font-size: 9px;
+    align-items: center;
+    color: yellow;
+    transform: translatex(65%);
+    overflow: none;
+ 
+  }
+}
+@media(max-width:480px){
+  .heart{
+    width: 30px;
+    height: 30px;
+  }
+}
+.menu a:hover{
+  color: green;
+  
+}
+.bef{
+  width: 100vw;
+  height: 10vh;
+  background: white;
+  display: grid;
+place-items: center;
+background: #A67ACE;
+}
+.lk{
+  width: 50%;
+  height: auto;
+
+}
+.lk ul{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.lk ul li{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding-left: 10px;
+ color: orange;
+ 
+ font-weight: bold;
+ animation: light 0.7s linear infinite;
+ 
+}
+.lk ul li:first-child{
+  padding-left: 0%;
+}
+@-webkit-keyframes light{
+  0%{
+    color: red;
+    text-shadow: none;
+  }
+  10%{
+    color: white;
+  }
+  30%{
+    color: orchid;
+  }
+  50%{
+    color: pink;
+    text-shadow: none;
+  }
+  70%{
+    color: skyblue;
+    text-shadow: none;
+  }
+  90%{
+    color: black ;
+    text-shadow: none;
+  }
+  100%{
+    color: yellowgreen;
+    text-shadow: 0 0 40px red,0 0 20px red;
+  }
+}
+.lk ul li:nth-child(1){animation-delay:  0s;}
+.lk ul li:nth-child(2){animation-delay:0.1s;}
+.lk ul li:nth-child(3){animation-delay:0.2s;}
+.lk ul li:nth-child(4){animation-delay:0.3s;}
+.lk ul li:nth-child(5){animation-delay:0.5s;}
+.lk ul li:nth-child(6){animation-delay:0.3s;}
+.lk ul li:nth-child(7){animation-delay:0.2s;}
+.lk ul li:nth-child(8){animation-delay:0.1s;}
+.lk ul li:nth-child(9){animation-delay:  0s;}

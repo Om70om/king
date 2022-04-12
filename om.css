@@ -1,0 +1,18 @@
+.om{
+  border: 3px dashed red;
+  text-align: center;
+ 
+ }
+.ok {
+  
+  
+ text-align: right;
+  
+}
+.ok input{
+  background-color: pink;
+  
+  font-size: 20px;
+  color: red;
+  text-transform: capitalize;
+}
